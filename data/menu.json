@@ -1,0 +1,1321 @@
+{
+  "restaurante": "Restaurante Central",
+  "endereco": "Av. Denise Cristina da Rocha, 1505-E - Justinópolis - Ribeirão da Neves - MG",
+  "telefone": "(031) 3638-2244",
+  "whatsapp": "(31) 3638-7499 / 3639-7212 / 2392-3436",
+  "email": "centraljusti@yahoo.com.br",
+  "instagram": "@bordaoalimentos",
+  "categorias": [
+    {
+      "nome": "Pizzas",
+      "tamanhos": [
+        {
+          "nome": "Pequena",
+          "codigo_prefixo": "COD.01-COD.09"
+        },
+        {
+          "nome": "Média",
+          "codigo_prefixo": "COD.10-COD.18"
+        },
+        {
+          "nome": "Grande",
+          "codigo_prefixo": "COD.19-COD.27"
+        },
+        {
+          "nome": "Gigante",
+          "codigo_prefixo": "COD.28-COD.36"
+        }
+      ],
+      "itens": [
+        {
+          "id": "COD.01",
+          "nome": "Mussarela",
+          "descricao": "Mussarela, tomate e orégano",
+          "precos": {
+            "Pequena": "38,00",
+            "Média": "44,00",
+            "Grande": "48,00",
+            "Gigante": "54,00"
+          }
+        },
+        {
+          "id": "COD.02",
+          "nome": "Modinha Central",
+          "descricao": "Mussarela, presunto e calabresa",
+          "precos": {
+            "Pequena": "38,00",
+            "Média": "44,00",
+            "Grande": "48,00",
+            "Gigante": "54,00"
+          }
+        },
+        {
+          "id": "COD.03",
+          "nome": "Presunto",
+          "descricao": "Presunto e mussarela",
+          "precos": {
+            "Pequena": "38,00",
+            "Média": "44,00",
+            "Grande": "48,00",
+            "Gigante": "54,00"
+          }
+        },
+        {
+          "id": "COD.04",
+          "nome": "Calabresa",
+          "descricao": "Mussarela e calabresa",
+          "precos": {
+            "Pequena": "38,00",
+            "Média": "44,00",
+            "Grande": "48,00",
+            "Gigante": "54,00"
+          }
+        },
+        {
+          "id": "COD.05",
+          "nome": "Salaminho",
+          "descricao": "Mussarela e salaminho",
+          "precos": {
+            "Pequena": "38,00",
+            "Média": "44,00",
+            "Grande": "48,00",
+            "Gigante": "54,00"
+          }
+        },
+        {
+          "id": "COD.06",
+          "nome": "Milho Verde",
+          "descricao": "Mussarela e milho verde",
+          "precos": {
+            "Pequena": "38,00",
+            "Média": "44,00",
+            "Grande": "48,00",
+            "Gigante": "54,00"
+          }
+        },
+        {
+          "id": "COD.07",
+          "nome": "Quatro Queijos",
+          "descricao": "Mussarela, queijo minas, provolone e requeijão cremoso",
+          "precos": {
+            "Pequena": "44,00",
+            "Média": "48,00",
+            "Grande": "54,00",
+            "Gigante": "59,00"
+          }
+        },
+        {
+          "id": "COD.08",
+          "nome": "À Moda Família Central",
+          "descricao": "Mussarela, calabresa, presunto, bacon, cebola, pimentão, azeitona, milho verde e frango",
+          "precos": {
+            "Pequena": "44,00",
+            "Média": "48,00",
+            "Grande": "54,00",
+            "Gigante": "59,00"
+          }
+        },
+        {
+          "id": "COD.09",
+          "nome": "Palmito",
+          "descricao": "Mussarela, palmito e molho a bolonhesa",
+          "precos": {
+            "Pequena": "44,00",
+            "Média": "48,00",
+            "Grande": "54,00",
+            "Gigante": "59,00"
+          }
+        },
+        {
+          "id": "COD.10",
+          "nome": "Palmito com Frango",
+          "descricao": "Mussarela, palmito e frango",
+          "precos": {
+            "Pequena": "44,00",
+            "Média": "48,00",
+            "Grande": "54,00",
+            "Gigante": "59,00"
+          }
+        },
+        {
+          "id": "COD.11",
+          "nome": "Frango a Bolonhesa",
+          "descricao": "Mussarela e frango a bolonhesa",
+          "precos": {
+            "Pequena": "44,00",
+            "Média": "48,00",
+            "Grande": "54,00",
+            "Gigante": "59,00"
+          }
+        },
+        {
+          "id": "COD.12",
+          "nome": "Portuguesa",
+          "descricao": "Mussarela, ovo, presunto, calabresa, azeitona, cebola e pimentão",
+          "precos": {
+            "Pequena": "44,00",
+            "Média": "48,00",
+            "Grande": "54,00",
+            "Gigante": "59,00"
+          }
+        },
+        {
+          "id": "COD.13",
+          "nome": "Cinco Carnes",
+          "descricao": "Mussarela, presunto, calabresa, bacon, frango e lombo defumado",
+          "precos": {
+            "Pequena": "44,00",
+            "Média": "48,00",
+            "Grande": "54,00",
+            "Gigante": "59,00"
+          }
+        },
+        {
+          "id": "COD.14",
+          "nome": "Atum",
+          "descricao": "Mussarela e atum",
+          "precos": {
+            "Pequena": "44,00",
+            "Média": "48,00",
+            "Grande": "54,00",
+            "Gigante": "59,00"
+          }
+        },
+        {
+          "id": "COD.15",
+          "nome": "Bacon",
+          "descricao": "Mussarela, fatias de bacon e milho verde",
+          "precos": {
+            "Pequena": "44,00",
+            "Média": "48,00",
+            "Grande": "54,00",
+            "Gigante": "59,00"
+          }
+        },
+        {
+          "id": "COD.16",
+          "nome": "Vegetariana",
+          "descricao": "Mussarela, azeitona, tomate e milho verde",
+          "precos": {
+            "Pequena": "44,00",
+            "Média": "48,00",
+            "Grande": "54,00",
+            "Gigante": "59,00"
+          }
+        },
+        {
+          "id": "COD.17",
+          "nome": "Doce",
+          "descricao": "Chocolate ao leite - Chocolate branco, banana e canela",
+          "precos": {
+            "Pequena": "38,00",
+            "Média": "44,00",
+            "Grande": "47,00"
+          }
+        },
+        {
+          "id": "COD.18",
+          "nome": "Fina",
+          "descricao": "",
+          "precos": {
+            "Pequena": "",
+            "Média": "",
+            "Grande": "15,90"
+          }
+        },
+        {
+          "id": "COD.19",
+          "nome": "Do Chefe",
+          "descricao": "Mussarela, lombo defumado, requeijão cremoso, tomate seco e bacon",
+          "precos": {
+            "Pequena": "49,00",
+            "Média": "54,00",
+            "Grande": "59,00",
+            "Gigante": "65,00"
+          }
+        },
+        {
+          "id": "COD.20",
+          "nome": "Margarita",
+          "descricao": "Mussarela, tomate, manjericão, parmesão",
+          "precos": {
+            "Pequena": "38,00",
+            "Média": "44,00",
+            "Grande": "48,00",
+            "Gigante": "54,00"
+          }
+        },
+        {
+          "id": "COD.21",
+          "nome": "Fiorentina",
+          "descricao": "Mussarela, lombo defumado e milho verde",
+          "precos": {
+            "Pequena": "43,00",
+            "Média": "46,00",
+            "Grande": "48,00",
+            "Gigante": "52,00"
+          }
+        },
+        {
+          "id": "COD.22",
+          "nome": "Frango c/ Requeijão Cremoso",
+          "descricao": "Mussarela e frango",
+          "precos": {
+            "Pequena": "43,00",
+            "Média": "46,00",
+            "Grande": "48,00",
+            "Gigante": "52,00"
+          }
+        },
+        {
+          "id": "COD.23",
+          "nome": "Modinha",
+          "descricao": "",
+          "precos": {
+            "Pequena": "55,00",
+            "Média": "57,00",
+            "Grande": "58,00",
+            "Gigante": "63,00"
+          }
+        },
+        {
+          "id": "COD.24",
+          "nome": "Provolone c/ bacon, Quatro queijos, alho poró",
+          "descricao": "",
+          "precos": {
+            "Pequena": "65,00"
+          }
+        }
+      ],
+      "promocao": "AOS DOMINGOS COMPRE UMA PIZZA MD E RECEBA UMA GG"
+    },
+    {
+      "nome": "Sanduíches Tradicionais",
+      "itens": [
+        {
+          "id": "160",
+          "nome": "Hamburguer",
+          "descricao": "Pão, Carne, alface, tomate e presunto",
+          "preco": "9,90"
+        },
+        {
+          "id": "161",
+          "nome": "X-Burguer",
+          "descricao": "Pão, Carne, alface, tomate, muçarela e presunto",
+          "preco": "11,90"
+        },
+        {
+          "id": "162",
+          "nome": "X-Egg-Burguer",
+          "descricao": "Pão, Carne, alface, tomate, ovo, batata palha, muçarela e presunto",
+          "preco": "14,90"
+        },
+        {
+          "id": "163",
+          "nome": "X-Egg-Bacon-Burguer",
+          "descricao": "Pão brioche, Carne, queijo, ovo, bacon, batata palha e salada c/ fritas",
+          "preco": "18,90"
+        },
+        {
+          "id": "164",
+          "nome": "X-Tudo",
+          "descricao": "Pão brioche, Carne, bacon, ovo, queijo, presunto, batata palha, milho verde e salada c/ fritas",
+          "preco": "19,90"
+        },
+        {
+          "id": "165",
+          "nome": "X-Frango",
+          "descricao": "Pão brioche, Frango, ovo, queijo, presunto, milho verde, bacon, batata palha e salada c/ fritas",
+          "preco": "19,90"
+        },
+        {
+          "id": "167",
+          "nome": "Hamburgão",
+          "descricao": "Pão brioche, 2 Carnes gigante, presunto, mussarela, ovo, bacon, salada, milho verde e fritas",
+          "preco": "20,90"
+        },
+        {
+          "id": "169",
+          "nome": "X-egge-Bacon Picanha",
+          "descricao": "Pão brioche, maionese, alface, tomate, mussarela, ovo, batata palha, milho e abacaxi",
+          "preco": "25,00"
+        },
+        {
+          "id": "170",
+          "nome": "Misto Quente",
+          "descricao": "",
+          "preco": "9,90"
+        },
+        {
+          "id": "171",
+          "nome": "Mistão",
+          "descricao": "Pão de forma, mussarela, presunto e bacon",
+          "preco": "13,90"
+        }
+      ]
+    },
+    {
+      "nome": "Massas",
+      "itens": [
+        {
+          "id": "100",
+          "nome": "Espaguete à Bolonhesa",
+          "descricao": "1 pessoa",
+          "preco": "24,90"
+        },
+        {
+          "id": "102",
+          "nome": "Espaguete com Bacon",
+          "descricao": "1 pessoa",
+          "preco": "24,90"
+        },
+        {
+          "id": "103",
+          "nome": "Espaguete com Presunto e Mussarela",
+          "descricao": "1 pessoa",
+          "preco": "24,90"
+        },
+        {
+          "id": "105",
+          "nome": "Lasanha à Bolonhesa",
+          "descricao": "2 pessoas",
+          "preco": "58,90"
+        },
+        {
+          "id": "106",
+          "nome": "Macarrão na Chapa",
+          "descricao": "1 Pessoa",
+          "preco": "24,90"
+        },
+        {
+          "id": "108",
+          "nome": "Lasanha à Bolonhesa",
+          "descricao": "1 pessoa",
+          "preco": "29,90"
+        }
+      ]
+    },
+    {
+      "nome": "Caldos",
+      "itens": [
+        {
+          "id": "190",
+          "nome": "Mandioca",
+          "descricao": "",
+          "preco": "18,90"
+        },
+        {
+          "id": "191",
+          "nome": "Feijão com Bacon",
+          "descricao": "",
+          "preco": "18,90"
+        },
+        {
+          "id": "192",
+          "nome": "Mocotó c/ pão francês",
+          "descricao": "",
+          "preco": "18,90"
+        },
+        {
+          "id": "194",
+          "nome": "Dobradinha c/ feijão branco",
+          "descricao": "",
+          "preco": "18,90"
+        }
+      ]
+    },
+    {
+      "nome": "Porções (Batata in natura é mais saudável)",
+      "itens": [
+        {
+          "id": "200",
+          "nome": "Filé Mignon, fritas e queijo minas com orégano na chapa",
+          "descricao": "700grs",
+          "preco": "109,00"
+        },
+        {
+          "id": "201",
+          "nome": "Contra Filé com fritas",
+          "descricao": "800grs + 100grs queijo",
+          "preco": "99,00"
+        },
+        {
+          "id": "202",
+          "nome": "Lombo grelhado com fritas",
+          "descricao": "800grs + 100grs queijo",
+          "preco": "85,00"
+        },
+        {
+          "id": "203",
+          "nome": "Fritas, mussarela e bacon in natura",
+          "descricao": "",
+          "preco": "42,90"
+        },
+        {
+          "id": "204",
+          "nome": "Fritas, maionese e catchup in natura",
+          "descricao": "",
+          "preco": "35,00"
+        },
+        {
+          "id": "205",
+          "nome": "Fritas c/ cheddar e bacon in natura",
+          "descricao": "",
+          "preco": "42,90"
+        },
+        {
+          "id": "206",
+          "nome": "Frango a passarinho",
+          "descricao": "1k",
+          "preco": "69,90"
+        },
+        {
+          "id": "207",
+          "nome": "Carne de sol com mandioca, manteiga e cebola",
+          "descricao": "750grs",
+          "preco": "99,00"
+        },
+        {
+          "id": "209",
+          "nome": "1/2 Tábua Mista",
+          "descricao": "",
+          "preco": "99,00"
+        },
+        {
+          "id": "210",
+          "nome": "Torresmo de barriga c/mandioca",
+          "descricao": "550grs",
+          "preco": "79,00"
+        },
+        {
+          "id": "211",
+          "nome": "Iscas de frango a milanesa e fritas",
+          "descricao": "800g",
+          "preco": "69,00"
+        },
+        {
+          "id": "212",
+          "nome": "Linguiça c/ mandioca frita ou na manteiga",
+          "descricao": "800g",
+          "preco": "69,00"
+        },
+        {
+          "id": "213",
+          "nome": "Linguiça calabresa 400grs c/ batata 200grs e mandioca 200grs",
+          "descricao": "",
+          "preco": "59,00"
+        },
+        {
+          "id": "214",
+          "nome": "Picanha Plena Chef c / batata",
+          "descricao": "700grs",
+          "preco": "119,00"
+        },
+        {
+          "id": "215",
+          "nome": "Fritas chips in natura",
+          "descricao": "",
+          "preco": "35,00"
+        },
+        {
+          "id": "216",
+          "nome": "Torresminho c/ mandioca frita ou na manteiga",
+          "descricao": "400grs",
+          "preco": "49,00"
+        },
+        {
+          "id": "217",
+          "nome": "Mini bolinho de carne (10 uni)",
+          "descricao": "",
+          "preco": "59,90"
+        },
+        {
+          "id": "219",
+          "nome": "Mistão - Carne de sol, Mandioquinha, batata e linguiça",
+          "descricao": "1k",
+          "preco": "110,00"
+        },
+        {
+          "id": "220",
+          "nome": "Tábua Mista",
+          "descricao": "ovo de codorna, torresmo especial, batata frita, lombo defumado, filé mignon, filé de frango, coraçãozinho e molho rose, 1,5 kg, queijo, 100gramas",
+          "preco": "195,00"
+        },
+        {
+          "id": "223",
+          "nome": "Nuggets Frango",
+          "descricao": "300g",
+          "preco": "29,90"
+        },
+        {
+          "id": "225",
+          "nome": "Peixe Cascudo",
+          "descricao": "700grs c/ fritas 300grs",
+          "preco": "85,00"
+        },
+        {
+          "id": "226",
+          "nome": "Porção Cascudo",
+          "descricao": "350grs, fritas e banana frita",
+          "preco": "59,00"
+        },
+        {
+          "id": "227",
+          "nome": "Petiscos",
+          "descricao": "Salaminho, palmito, ovo de codorna, Coração de frango, provolone, filé mignon 100gramas",
+          "preco": "16,90"
+        },
+        {
+          "id": "228",
+          "nome": "Presunto, lombo defumado, mussarela cubinhos, azeitona, mandioquinha, torresmo comum, abacaxi, queijo minas",
+          "descricao": "Cada 100g",
+          "preco": "13,90"
+        },
+        {
+          "id": "229",
+          "nome": "Tira gosto contra filé / lombo / file de peito de frango Grelhado, torresmo especial (Qualquer um)",
+          "descricao": "200gramas",
+          "preco": "29,90"
+        },
+        {
+          "id": "230",
+          "nome": "Tira gosto (carne, mandioca, batata)",
+          "descricao": "300g",
+          "preco": "39,90"
+        },
+        {
+          "id": "235",
+          "nome": "Traíra sem espinha c/ batata chips",
+          "descricao": "",
+          "preco": "99,00"
+        },
+        {
+          "id": "236",
+          "nome": "Cascudo",
+          "descricao": "700g decorado com alface e tomate",
+          "preco": "79,00"
+        },
+        {
+          "id": "238",
+          "nome": "Filé tilapia c/ fritas",
+          "descricao": "800grs",
+          "preco": "119,00"
+        },
+        {
+          "id": "239",
+          "nome": "Barquinho feliz",
+          "descricao": "Nuggets, 4 mini hamburguer, fritas e molho especial",
+          "preco": "59,90"
+        },
+        {
+          "id": "273",
+          "nome": "Bolinho de bacalhau",
+          "descricao": "200grs",
+          "preco": "49,00"
+        },
+        {
+          "id": "274",
+          "nome": "Bolinho de Tilápia",
+          "descricao": "200grs",
+          "preco": "49,00"
+        },
+        {
+          "id": "281",
+          "nome": "Fígado de boi",
+          "descricao": "500grs c/ jiló (tipo Mercado Central)",
+          "preco": "49,00"
+        },
+        {
+          "id": "356",
+          "nome": "Pão de alho especial",
+          "descricao": "",
+          "preco": "9,50"
+        }
+      ]
+    },
+    {
+      "nome": "A La Carte (Aqui tem batata in natura)",
+      "itens": [
+        {
+          "id": "300",
+          "nome": "Churrasco Misto grelhado",
+          "descricao": "800g - para 4 pessoas (arroz, fritas, tropeiro e vinagrete) ''ganhe 4 bombons''",
+          "preco": "199,00"
+        },
+        {
+          "id": "302",
+          "nome": "Picanha Chef Plena",
+          "descricao": "400grs - Para 2 pessoas (arroz, fritas, tropeiro e vinagrete) ''Brinde 2 bombons''",
+          "preco": "149,00"
+        },
+        {
+          "id": "305",
+          "nome": "Contra Filé",
+          "descricao": "400g - para 2 pessoas com batatas a portuguesa, arroz, tropeiro e vinagrete",
+          "preco": "119,00"
+        },
+        {
+          "id": "310",
+          "nome": "Mexidão",
+          "descricao": "2 pessoas",
+          "preco": "59,50"
+        },
+        {
+          "id": "311",
+          "nome": "Mexidão",
+          "descricao": "1 pessoa",
+          "preco": "29,90"
+        },
+        {
+          "id": "312",
+          "nome": "Tropeirinho com linguiça",
+          "descricao": "",
+          "preco": "32,99"
+        },
+        {
+          "id": "313",
+          "nome": "Tropeiro com arroz, ovo, carne de porco e couve",
+          "descricao": "1 pessoa",
+          "preco": "37,50"
+        },
+        {
+          "id": "314",
+          "nome": "(Isca) de filé mignon 350g",
+          "descricao": "(arroz, fritas, tropeiro e vinagrete) 2 pessoas - ''Brinde 2 bombons''",
+          "preco": "119,00"
+        },
+        {
+          "id": "315",
+          "nome": "Picanha Chef Plena",
+          "descricao": "250g porção",
+          "preco": "95,00"
+        },
+        {
+          "id": "319",
+          "nome": "Cascudo",
+          "descricao": "700gs, arroz, fritas e salada p/ 2 pessoas",
+          "preco": "89,00"
+        },
+        {
+          "id": "222",
+          "nome": "Traira s/ espinha c / arroz, salada, batata chips e purê de batatas",
+          "descricao": "para 2 pessoas",
+          "preco": "119,00"
+        }
+      ]
+    },
+    {
+      "nome": "Guarnições",
+      "itens": [
+        {
+          "id": "350",
+          "nome": "Arroz branco",
+          "descricao": "",
+          "preco": "9,90"
+        },
+        {
+          "id": "351",
+          "nome": "Arroz c/ alho",
+          "descricao": "",
+          "preco": "12,50"
+        },
+        {
+          "id": "352",
+          "nome": "Vinagrete",
+          "descricao": "",
+          "preco": "9,90"
+        },
+        {
+          "id": "353",
+          "nome": "Omelete, presunto e mussarela",
+          "descricao": "",
+          "preco": "15,00"
+        },
+        {
+          "id": "354",
+          "nome": "Salpicão",
+          "descricao": "",
+          "preco": "15,00"
+        }
+      ]
+    },
+    {
+      "nome": "Bebidas",
+      "subcategorias": [
+        {
+          "nome": "Cervejas",
+          "itens": [
+            {
+              "id": "500",
+              "nome": "Skol",
+              "descricao": "600ml",
+              "preco": "10,90"
+            },
+            {
+              "id": "501",
+              "nome": "Brahma",
+              "descricao": "600ml",
+              "preco": "10,90"
+            },
+            {
+              "id": "502",
+              "nome": "Brahma Duplo Malte",
+              "descricao": "600ml",
+              "preco": "13,00"
+            },
+            {
+              "id": "503",
+              "nome": "Kaiser",
+              "descricao": "600ml",
+              "preco": "8,00"
+            },
+            {
+              "id": "505",
+              "nome": "Beats",
+              "descricao": "",
+              "preco": "9,90"
+            },
+            {
+              "id": "506",
+              "nome": "Stella, Spaten",
+              "descricao": "600ml",
+              "preco": "14,00"
+            },
+            {
+              "id": "507",
+              "nome": "Skol",
+              "descricao": "Latão",
+              "preco": "8,00"
+            },
+            {
+              "id": "508",
+              "nome": "Cerveja sem álcool",
+              "descricao": "",
+              "preco": "7,00"
+            },
+            {
+              "id": "510",
+              "nome": "Caracu",
+              "descricao": "Lata",
+              "preco": "7,00"
+            },
+            {
+              "id": "512",
+              "nome": "Heineken",
+              "descricao": "600ml",
+              "preco": "18,00"
+            },
+            {
+              "id": "513",
+              "nome": "Heineken Long Nec e Corona",
+              "descricao": "",
+              "preco": "12,00"
+            },
+            {
+              "id": "514",
+              "nome": "Budweiser, Stella e outros Long Nec",
+              "descricao": "",
+              "preco": "12,00"
+            },
+            {
+              "id": "515",
+              "nome": "Amstel, Petra, Eisenbahn",
+              "descricao": "",
+              "preco": "10,90"
+            },
+            {
+              "id": "518",
+              "nome": "Antarctica Original",
+              "descricao": "",
+              "preco": "14,00"
+            },
+            {
+              "id": "528",
+              "nome": "Heineken 600ml balde 5 uni",
+              "descricao": "",
+              "preco": "85,00"
+            }
+          ]
+        },
+        {
+          "nome": "Chopp",
+          "itens": [
+            {
+              "id": "520",
+              "nome": "Chopp Claro",
+              "descricao": "300ml",
+              "preco": "8,50"
+            },
+            {
+              "id": "519",
+              "nome": "Chopp Claro",
+              "descricao": "500ml",
+              "preco": "13,00"
+            },
+            {
+              "id": "527",
+              "nome": "Chopp Claro jarra",
+              "descricao": "1.000ml",
+              "preco": "25,50"
+            },
+            {
+              "id": "521",
+              "nome": "Chopp Claro",
+              "descricao": "1.500ml",
+              "preco": "38,50"
+            },
+            {
+              "id": "522",
+              "nome": "Chopp Claro",
+              "descricao": "2.000ml",
+              "preco": "51,00"
+            },
+            {
+              "id": "520",
+              "nome": "Chopp Vinho",
+              "descricao": "300ml",
+              "preco": "10,00"
+            },
+            {
+              "id": "519",
+              "nome": "Chopp Vinho",
+              "descricao": "500ml",
+              "preco": "16,50"
+            },
+            {
+              "id": "527",
+              "nome": "Chopp Vinho jarra",
+              "descricao": "1.000ml",
+              "preco": "33,00"
+            },
+            {
+              "id": "521",
+              "nome": "Chopp Vinho",
+              "descricao": "1.500ml",
+              "preco": "49,50"
+            },
+            {
+              "id": "522",
+              "nome": "Chopp Vinho",
+              "descricao": "2.000ml",
+              "preco": "65,00"
+            },
+            {
+              "id": "523",
+              "nome": "Chopp",
+              "descricao": "340ml caneca",
+              "preco": "8,90"
+            }
+          ]
+        },
+        {
+          "nome": "Sucos",
+          "itens": [
+            {
+              "id": "COD.650",
+              "nome": "Abacaxi",
+              "descricao": "300ml",
+              "preco": "8,00"
+            },
+            {
+              "id": "COD.651",
+              "nome": "Laranja",
+              "descricao": "300ml",
+              "preco": "8,00"
+            },
+            {
+              "id": "COD.652",
+              "nome": "Limonada Suíça",
+              "descricao": "300ml",
+              "preco": "8,00"
+            },
+            {
+              "id": "COD.653",
+              "nome": "Laranja c/ cenoura",
+              "descricao": "300ml",
+              "preco": "8,00"
+            },
+            {
+              "id": "COD.654",
+              "nome": "Suco lata",
+              "descricao": "",
+              "preco": "10,00"
+            },
+            {
+              "id": "COD.655",
+              "nome": "Suco natural morango, Acerola, ou maracujá",
+              "descricao": "300ml",
+              "preco": "10,00"
+            },
+            {
+              "id": "COD.656",
+              "nome": "Adição suco",
+              "descricao": "",
+              "preco": "3,00"
+            }
+          ]
+        },
+        {
+          "nome": "Refrigerantes",
+          "itens": [
+            {
+              "id": "678",
+              "nome": "Refri lata",
+              "descricao": "",
+              "preco": "6,00"
+            },
+            {
+              "id": "679",
+              "nome": "Refri 500ml (Coca, Fanta)",
+              "descricao": "",
+              "preco": "8,90"
+            },
+            {
+              "id": "680",
+              "nome": "Refri 2 litros (Coca, Fanta)",
+              "descricao": "",
+              "preco": "16,90"
+            },
+            {
+              "id": "682",
+              "nome": "Refri KS 290ml",
+              "descricao": "",
+              "preco": "5,00"
+            },
+            {
+              "id": "685",
+              "nome": "Refri 600ml Mate Couro",
+              "descricao": "",
+              "preco": "6,00"
+            },
+            {
+              "id": "660",
+              "nome": "Guaraná Antarctica 1 litro",
+              "descricao": "",
+              "preco": "8,50"
+            },
+            {
+              "id": "688",
+              "nome": "Refri Ambel / Antarctica 2 Lt",
+              "descricao": "",
+              "preco": "15,00"
+            }
+          ]
+        },
+        {
+          "nome": "Bebidas Diversos",
+          "itens": [
+            {
+              "id": "670",
+              "nome": "Água H2O",
+              "descricao": "",
+              "preco": "7,00"
+            },
+            {
+              "id": "672",
+              "nome": "Água natural s/ gás",
+              "descricao": "",
+              "preco": "3,50"
+            },
+            {
+              "id": "673",
+              "nome": "Água natural c/ gás",
+              "descricao": "",
+              "preco": "4,50"
+            },
+            {
+              "id": "674",
+              "nome": "Água tônica em lata",
+              "descricao": "",
+              "preco": "6,00"
+            },
+            {
+              "id": "675",
+              "nome": "Gatorade",
+              "descricao": "",
+              "preco": "8,90"
+            },
+            {
+              "id": "676",
+              "nome": "Energético Red Bull",
+              "descricao": "",
+              "preco": "14,90"
+            },
+            {
+              "id": "686",
+              "nome": "Caçulinha",
+              "descricao": "200ml",
+              "preco": "3,50"
+            }
+          ]
+        },
+        {
+          "nome": "Coqueteis",
+          "itens": [
+            {
+              "id": "530",
+              "nome": "CaipiVodka",
+              "descricao": "",
+              "preco": "15,00"
+            },
+            {
+              "id": "531",
+              "nome": "Caipi Orloff",
+              "descricao": "",
+              "preco": "19,90"
+            },
+            {
+              "id": "532",
+              "nome": "Caipirinha",
+              "descricao": "",
+              "preco": "15,00"
+            },
+            {
+              "id": "533",
+              "nome": "Caipiríssima",
+              "descricao": "",
+              "preco": "23,90"
+            },
+            {
+              "id": "534",
+              "nome": "Cuba Libre",
+              "descricao": "",
+              "preco": "24,90"
+            },
+            {
+              "id": "535",
+              "nome": "Gim Tônica",
+              "descricao": "",
+              "preco": "24,90"
+            },
+            {
+              "id": "536",
+              "nome": "Hi-Fi",
+              "descricao": "",
+              "preco": "24,90"
+            },
+            {
+              "id": "537",
+              "nome": "Caipiabacaxi",
+              "descricao": "",
+              "preco": "24,90"
+            },
+            {
+              "id": "538",
+              "nome": "Caipimorango",
+              "descricao": "",
+              "preco": "24,90"
+            },
+            {
+              "id": "542",
+              "nome": "Copão 700ml c/ Gelinho",
+              "descricao": "",
+              "preco": "29,90"
+            }
+          ]
+        },
+        {
+          "nome": "Doses",
+          "itens": [
+            {
+              "id": "511",
+              "nome": "Vodka Ice",
+              "descricao": "",
+              "preco": "9,90"
+            },
+            {
+              "id": "549",
+              "nome": "Cachaça Família Central",
+              "descricao": "",
+              "preco": "5,00"
+            },
+            {
+              "id": "550",
+              "nome": "Orloff",
+              "descricao": "",
+              "preco": "9,90"
+            },
+            {
+              "id": "551",
+              "nome": "Rum Montilla",
+              "descricao": "",
+              "preco": "9,90"
+            },
+            {
+              "id": "552",
+              "nome": "Rum Bacardi",
+              "descricao": "",
+              "preco": "13,90"
+            },
+            {
+              "id": "553",
+              "nome": "Gim Tanqueray",
+              "descricao": "",
+              "preco": "24,90"
+            },
+            {
+              "id": "554",
+              "nome": "Campari",
+              "descricao": "",
+              "preco": "16,00"
+            },
+            {
+              "id": "555",
+              "nome": "Vodka",
+              "descricao": "",
+              "preco": "10,00"
+            },
+            {
+              "id": "556",
+              "nome": "Conhaque Dreher",
+              "descricao": "",
+              "preco": "9,00"
+            },
+            {
+              "id": "557",
+              "nome": "Conhaque Presidente",
+              "descricao": "",
+              "preco": "9,00"
+            },
+            {
+              "id": "558",
+              "nome": "Conhaque Alcatrão",
+              "descricao": "",
+              "preco": "9,00"
+            },
+            {
+              "id": "559",
+              "nome": "Cachaça Seleta",
+              "descricao": "",
+              "preco": "9,00"
+            },
+            {
+              "id": "560",
+              "nome": "Cachaça Salinas",
+              "descricao": "",
+              "preco": "9,00"
+            },
+            {
+              "id": "561",
+              "nome": "Cachaça Vale Verde",
+              "descricao": "",
+              "preco": "15,00"
+            },
+            {
+              "id": "562",
+              "nome": "Martini",
+              "descricao": "",
+              "preco": "15,00"
+            },
+            {
+              "id": "563",
+              "nome": "Underberg",
+              "descricao": "",
+              "preco": "19,90"
+            },
+            {
+              "id": "564",
+              "nome": "Conhaque Domecq",
+              "descricao": "",
+              "preco": "15,00"
+            },
+            {
+              "id": "566",
+              "nome": "Cachaça Sta. Maria Suaçui",
+              "descricao": "",
+              "preco": "8,90"
+            },
+            {
+              "id": "547",
+              "nome": "Tequila Especial Ouro",
+              "descricao": "",
+              "preco": "26,90"
+            }
+          ]
+        },
+        {
+          "nome": "Whisk's",
+          "itens": [
+            {
+              "id": "610",
+              "nome": "Johnnie Walker Black Label",
+              "descricao": "",
+              "preco": "39,90"
+            },
+            {
+              "id": "613",
+              "nome": "Cavalinho",
+              "descricao": "",
+              "preco": "19,00"
+            },
+            {
+              "id": "615",
+              "nome": "Ballantines Finest",
+              "descricao": "",
+              "preco": "19,00"
+            }
+          ]
+        },
+        {
+          "nome": "Licores",
+          "itens": [
+            {
+              "id": "600",
+              "nome": "Amarula",
+              "descricao": "",
+              "preco": "28,90"
+            }
+          ]
+        },
+        {
+          "nome": "Vinhos",
+          "itens": [
+            {
+              "id": "751",
+              "nome": "Pérgola balde",
+              "descricao": "1Lt",
+              "preco": "59,00"
+            },
+            {
+              "id": "753",
+              "nome": "Vinho campo largo - taça",
+              "descricao": "",
+              "preco": "16,00"
+            },
+            {
+              "id": "754",
+              "nome": "Pérgola Taça",
+              "descricao": "",
+              "preco": "19,00"
+            }
+          ]
+        },
+        {
+          "nome": "Outros",
+          "itens": [
+            {
+              "id": "640",
+              "nome": "Gelinho",
+              "descricao": "",
+              "preco": "5,00"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "informacoes_adicionais": {
+    "promocoes": [
+      "Promoção",
+      "AOS DOMINGOS COMPRE UMA PIZZA MD E RECEBA UMA GG"
+    ],
+    "delivery": "Delivery - Tele-entrega",
+    "horario_funcionamento": "",
+    "regras": [
+      "Não se permite consumir qualquer produto próprio no interior deste estabelecimento",
+      "Não é permitido: Permanência sem camisa; Uso de som automotivo; Assobiar, bater sobre a mesa; Fumar no ambiente interno."
+    ],
+    "sugestoes_reclamacoes": "Email: centraljusti@yahoo.com.br - Sua família e você são nosso principal foco.",
+    "slogan": "RODÍZIO DE PIZZAS / TIRA GOSTO / COMIDA DE BOTECO - É COM O CENTRAL EM SUA CASA!"
+  }
+}

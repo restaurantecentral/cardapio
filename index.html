@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápio Restaurante Central | As melhores pizzas e petiscos da região!</title>
+  <meta name="description" content="Confira nosso cardápio com as melhores pizzas e petiscos da região!">
+  <meta name="keywords" content="cardápio, restaurante, central, pizzas, petiscos, região">
+  <style>
+    :root {
+      --header-bg: #cf0b0b;
+      --header-fg: #ffffff;
+      --header-pill-bg: rgba(255, 255, 255, 0.16);
+      --header-pill-border: rgba(255, 255, 255, 0.55);
+      --page-bg: #f2f2f2;
+      --card-bg: #ffffff;
+      --card-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+      --card-radius: 16px;
+      --muted: rgba(15, 23, 42, 0.62);
+      --accent: #16a34a;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body { height: 100%; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: var(--page-bg);
+      color: #0f172a;
+    }
+
+    .topbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      background: var(--header-bg);
+      color: var(--header-fg);
+    }
+
+    .topbar__inner {
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 14px;
+      gap: 12px;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .brand__logo {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      object-fit: cover;
+      background: rgba(255, 255, 255, 0.18);
+      flex: 0 0 auto;
+    }
+
+    .brand__name {
+      font-weight: 800;
+      letter-spacing: 0.2px;
+      font-size: 16px;
+      line-height: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 46vw;
+    }
+
+    .follow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 2px solid var(--header-pill-border);
+      background: var(--header-pill-bg);
+      color: var(--header-fg);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1;
+      white-space: nowrap;
+      flex: 0 0 auto;
+    }
+
+    .follow svg {
+      width: 18px;
+      height: 18px;
+      display: block;
+      color: var(--header-fg);
+      flex: 0 0 auto;
+    }
+
+    @media (min-width: 420px) {
+      .topbar__inner { padding: 0 18px; }
+      .brand__name { max-width: 360px; }
+    }
+
+    .page {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: calc(18px + 56px) 14px 28px;
+    }
+
+    .hero {
+      padding: 18px 0 10px;
+      display: grid;
+      place-items: center;
+    }
+
+    .hero__logo {
+      width: min(120px, 70vw);
+      aspect-ratio: 1 / 1;
+      border-radius: 999px;
+      object-fit: cover;
+      background: #ffffff;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+      border: 6px solid rgba(255, 255, 255, 0.75);
+    }
+
+    .cards {
+      display: grid;
+      gap: 14px;
+      padding-top: 10px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--card-radius);
+      box-shadow: var(--card-shadow);
+      display: grid;
+      grid-template-columns: 50px 1fr auto;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 12px;
+      text-decoration: none;
+      color: inherit;
+      min-height: 64px;
+    }
+
+    .card__icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.06);
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+    }
+
+    .card__icon svg {
+      width: 24px;
+      height: 24px;
+      color: rgba(15, 23, 42, 0.72);
+    }
+
+    .card__title {
+      font-weight: 750;
+      font-size: 16px;
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    .card__subtitle {
+      font-size: 13px;
+      line-height: 1.2;
+      color: var(--muted);
+      margin: 4px 0 0 0;
+    }
+
+    .card__action {
+      font-weight: 800;
+      color: var(--accent);
+      letter-spacing: 0.3px;
+      font-size: 13px;
+      white-space: nowrap;
+      padding-left: 8px;
+    }
+
+    .social {
+      display: grid;
+      place-items: center;
+      padding-top: 14px;
+    }
+
+    .social__btn {
+      width: 52px;
+      height: 52px;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.6);
+      display: grid;
+      place-items: center;
+      text-decoration: none;
+      box-shadow: 0 10px 26px rgba(0, 0, 0, 0.18);
+    }
+
+    .social__btn svg {
+      width: 22px;
+      height: 22px;
+      color: #ffffff;
+      display: block;
+    }
+    :root {
+      --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+      --motion-fade-duration: 320ms;
+      --motion-slide-duration: 420ms;
+      --motion-scale-duration: 380ms;
+    }
+    .m-fade { opacity: 0; }
+    .m-fade-in { opacity: 1; transition: opacity var(--motion-fade-duration) var(--motion-ease); }
+    .m-up { transform: translateY(10px); }
+    .m-up-in { transform: translateY(0); transition: transform var(--motion-slide-duration) var(--motion-ease); }
+    .m-scale { transform: scale(0.94); }
+    .m-scale-in { transform: scale(1); transition: transform var(--motion-scale-duration) var(--motion-ease); }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; transition: none !important; }
+    }
+    .menu__sticky {
+      position: sticky;
+      top: 56px;
+      z-index: 9;
+      background: var(--page-bg);
+      padding-top: 6px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+    }
+    .modal {
+      position: fixed;
+      inset: 0;
+      display: none;
+      z-index: 100;
+      place-items: center;
+      padding: 16px;
+    }
+    .modal__overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.5);
+    }
+    .modal__dialog {
+      position: relative;
+      width: min(640px, 92vw);
+      background: var(--card-bg);
+      border-radius: var(--card-radius);
+      box-shadow: var(--card-shadow);
+      padding: 16px 16px;
+    }
+    .modal__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .modal__title {
+      font-weight: 800;
+      font-size: 18px;
+      margin: 0;
+    }
+    .modal__close {
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      font-size: 22px;
+      line-height: 1;
+      padding: 4px 6px;
+      cursor: pointer;
+    }
+    .hours {
+      display: grid;
+      gap: 10px;
+      padding-top: 10px;
+    }
+    .hours__row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      background: rgba(15, 23, 42, 0.04);
+      border-radius: 12px;
+      padding: 8px 10px;
+    }
+    .hours__day {
+      font-weight: 750;
+      font-size: 14px;
+    }
+    .hours__time {
+      font-weight: 800;
+      color: var(--accent);
+    }
+    .hours__note {
+      font-size: 13px;
+      color: var(--muted);
+      margin: 0;
+      padding-top: 4px;
+    }
+    :root {
+      --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+      --motion-fade-duration: 320ms;
+      --motion-slide-duration: 420ms;
+      --motion-scale-duration: 380ms;
+    }
+    .m-fade { opacity: 0; }
+    .m-fade-in { opacity: 1; transition: opacity var(--motion-fade-duration) var(--motion-ease); }
+    .m-up { transform: translateY(10px); }
+    .m-up-in { transform: translateY(0); transition: transform var(--motion-slide-duration) var(--motion-ease); }
+    .m-scale { transform: scale(0.94); }
+    .m-scale-in { transform: scale(1); transition: transform var(--motion-scale-duration) var(--motion-ease); }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; transition: none !important; }
+    }
+    .menu {
+      padding-top: 8px;
+    }
+    .cats,
+    .subcats {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      padding: 8px 2px;
+      scrollbar-width: thin;
+    }
+    .chip {
+      flex: 0 0 auto;
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 2px solid rgba(15, 23, 42, 0.12);
+      background: #ffffff;
+      color: #0f172a;
+      text-decoration: none;
+      font-weight: 750;
+      font-size: 14px;
+      line-height: 1;
+      white-space: nowrap;
+    }
+    .chip--active {
+      background: var(--header-bg);
+      border-color: var(--header-bg);
+      color: var(--header-fg);
+    }
+    .menu-list {
+      display: grid;
+      gap: 12px;
+      padding-top: 12px;
+    }
+    .menu-item {
+      background: var(--card-bg);
+      border-radius: var(--card-radius);
+      box-shadow: var(--card-shadow);
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: start;
+      gap: 12px;
+      padding: 12px 12px;
+      min-height: 64px;
+    }
+    .menu-item__title {
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 1.2;
+      margin: 0;
+    }
+    .menu-item__desc {
+      font-size: 13px;
+      line-height: 1.2;
+      color: var(--muted);
+      margin: 6px 0 0 0;
+    }
+    .menu-item__meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.06);
+      color: rgba(15, 23, 42, 0.72);
+      padding: 6px 10px;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1;
+      white-space: nowrap;
+    }
+    .price {
+      font-weight: 800;
+      color: var(--accent);
+      letter-spacing: 0.3px;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+    .price-grid {
+      display: grid;
+      gap: 6px;
+    }
+    .price-row {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 10px;
+      font-size: 13px;
+    }
+    .price-row__size {
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar" role="banner">
+    <div class="topbar__inner">
+      <a class="brand" href="#" aria-label="Restaurante Central">
+        <img class="brand__logo" src="./assets/logo-restaurante.jpeg" alt="Logo do Restaurante Central" loading="eager" decoding="async">
+        <span class="brand__name">Restaurante Central</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero" aria-label="Destaque do restaurante">
+      <img class="hero__logo" src="./assets/logo-restaurante.jpeg" alt="Foto do restaurante" loading="eager" decoding="async">
+    </section>
+
+    <section class="cards" aria-label="Informações">
+      <a class="card" href="#" id="btnHours" aria-label="Ver horários de funcionamento">
+        <div class="card__icon" aria-hidden="true">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor"  d="M19.004 1c-.947 0-1.895.268-2.719.803 3.17 1.218 5.694 3.739 6.914 6.909.534-.823.801-1.77.801-2.717 0-2.761-2.236-4.995-4.996-4.995m-7.004 20c-4.411 0-8.001-3.59-8.001-8 0-4.413 3.59-8.001 8.001-8.001 4.412 0 8.002 3.588 8.002 8.001 0 4.41-3.59 8-8.002 8m10.002-8c0-5.522-4.475-10.001-10.002-10.001-5.523 0-10.001 4.479-10.001 10.001 0 4.316 3.087 10 10.001 10 6.93 0 10.002-5.693 10.002-10m-21.199-4.285c-.535-.824-.802-1.772-.802-2.718 0-2.757 2.233-4.995 4.991-4.995.948 0 1.896.268 2.721.803-3.172 1.217-5.692 3.739-6.91 6.91m12.196 4.285v-5h-1.999v6.998h5.999v-1.998h-4z"/></svg>
+        </div>
+        <div>
+          <p class="card__title">Aberto agora</p>
+          <p class="card__subtitle">Até às 01:00</p>
+        </div>
+        <div class="card__action">VER HORÁRIOS</div>
+      </a>
+
+      <a class="card" href="mailto:centraljusti@yahoo.com.br" aria-label="Enviar e-mail para o restaurante">
+        <div class="card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+            <path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5L4 8V6l8 5 8-5Z"/>
+          </svg>
+        </div>
+        <div>
+          <p class="card__title">centraljusti@yahoo.com.br</p>
+          <p class="card__subtitle">E-mail</p>
+        </div>
+        <div class="card__action"></div>
+      </a>
+
+      <a class="card" href="https://www.google.com/maps/search/?api=1&query=Av.%20Denise%20Cristina%20da%20Rocha%2C%201505-E%20-%20Justin%C3%B3polis%20-%20Ribeir%C3%A3o%20da%20Neves%20-%20MG" target="_blank" rel="noopener noreferrer" aria-label="Abrir direções no Google Maps">
+        <div class="card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+            <path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 14.5 9 2.5 2.5 0 0 1 12 11.5Z"/>
+          </svg>
+        </div>
+        <div>
+          <p class="card__title">Centro</p>
+          <p class="card__subtitle">Ribeirão da Neves, MG</p>
+        </div>
+        <div class="card__action">DIREÇÕES</div>
+      </a>
+    </section>
+
+    <section class="menu" aria-label="Cardápio">
+      <div class="menu__sticky">
+        <div class="cats" id="cats" role="tablist" aria-label="Categorias"></div>
+        <div class="subcats" id="subcats" role="tablist" aria-label="Subcategorias"></div>
+      </div>
+      <div class="menu-list" id="menuList" aria-live="polite"></div>
+    </section>
+
+    <div class="social" aria-label="Redes sociais">
+      <a class="social__btn" href="https://www.instagram.com/bordaoalimentos/" target="_blank" rel="noopener noreferrer" aria-label="Instagram do restaurante">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      </a>
+    </div>
+  </main>
+  <aside class="modal" id="hoursModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="hoursTitle">
+    <div class="modal__overlay" data-close="modal"></div>
+    <div class="modal__dialog">
+      <div class="modal__header">
+        <h3 class="modal__title" id="hoursTitle">Horários de atendimento</h3>
+        <button class="modal__close" type="button" data-close="modal" aria-label="Fechar">×</button>
+      </div>
+      <div class="modal__content">
+        <div class="hours">
+          <div class="hours__row"><span class="hours__day">Domingo</span><span class="hours__time">11:30 - 18:00</span></div>
+          <div class="hours__row"><span class="hours__day">Segunda</span><span class="hours__time">11:30 - 15:00</span></div>
+          <div class="hours__row"><span class="hours__day">Terça a quinta</span><span class="hours__time">11:30 - 00:00</span></div>
+          <div class="hours__row"><span class="hours__day">Sexta e sábado</span><span class="hours__time">11:30 - 01:00</span></div>
+          <p class="hours__note">Atendimento normal nos feriados.</p>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <script>
+    (function() {
+      var catsEl = document.getElementById('cats');
+      var subcatsEl = document.getElementById('subcats');
+      var listEl = document.getElementById('menuList');
+      var data = null;
+      var activeCatIndex = 0;
+      var activeSubcatIndex = null;
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var stagger = 60;
+      var btnHours = document.getElementById('btnHours');
+
+      function animateEnter(el, opts) {
+        if (reduce || !el) return;
+        var delay = (opts && opts.delay) || 0;
+        var type = (opts && opts.type) || 'up';
+        el.classList.add('m-fade');
+        if (type === 'up') el.classList.add('m-up');
+        if (type === 'scale') el.classList.add('m-scale');
+        el.style.transitionDelay = delay + 'ms';
+        requestAnimationFrame(function() {
+          el.classList.add('m-fade-in');
+          if (type === 'up') el.classList.add('m-up-in');
+          if (type === 'scale') el.classList.add('m-scale-in');
+        });
+      }
+
+      function animateStagger(els, baseDelay, type) {
+        if (reduce) return;
+        Array.prototype.forEach.call(els, function(el, i) {
+          animateEnter(el, { delay: (baseDelay || 0) + i * stagger, type: type || 'up' });
+        });
+      }
+
+      function fetchData() {
+        listEl.innerHTML = '<p class="menu-item__desc">Carregando cardápio...</p>';
+        fetch('./data/menu.json')
+          .then(function(r) { return r.json(); })
+          .then(function(json) {
+            data = json;
+            renderCats();
+            selectCat(0);
+          })
+          .catch(function() {
+            listEl.innerHTML = '<p class="menu-item__desc">Não foi possível carregar o cardápio. Abra pelo endereço http://localhost para funcionar.</p>';
+          });
+      }
+
+      function renderCats() {
+        catsEl.innerHTML = '';
+        if (!data || !Array.isArray(data.categorias)) return;
+        data.categorias.forEach(function(cat, idx) {
+          var btn = document.createElement('button');
+          btn.className = 'chip' + (idx === activeCatIndex ? ' chip--active' : '');
+          btn.type = 'button';
+          btn.textContent = cat.nome;
+          btn.addEventListener('click', function() { selectCat(idx); });
+          catsEl.appendChild(btn);
+        });
+      }
+
+      function renderSubcats(cat) {
+        subcatsEl.innerHTML = '';
+        if (cat && Array.isArray(cat.subcategorias) && cat.subcategorias.length) {
+          subcatsEl.style.display = '';
+          if (activeSubcatIndex === null) activeSubcatIndex = 0;
+          cat.subcategorias.forEach(function(sc, idx) {
+            var btn = document.createElement('button');
+            btn.className = 'chip' + (idx === activeSubcatIndex ? ' chip--active' : '');
+            btn.type = 'button';
+            btn.textContent = sc.nome;
+            btn.addEventListener('click', function() {
+              activeSubcatIndex = idx;
+              renderSubcats(cat);
+              renderItems(sc.itens);
+            });
+            subcatsEl.appendChild(btn);
+          });
+        } else {
+          subcatsEl.style.display = 'none';
+          activeSubcatIndex = null;
+        }
+      }
+
+      function selectCat(idx) {
+        activeCatIndex = idx;
+        renderCats();
+        var cat = data.categorias[idx];
+        renderSubcats(cat);
+        if (activeSubcatIndex !== null) {
+          var sc = cat.subcategorias[activeSubcatIndex];
+          renderItems(sc.itens);
+        } else {
+          renderItems(cat.itens);
+        }
+      }
+
+      function renderItems(items) {
+        listEl.innerHTML = '';
+        if (!Array.isArray(items)) return;
+        items.forEach(function(item) {
+          var isPizza = item.precos && typeof item.precos === 'object';
+          var card = document.createElement('div');
+          card.className = 'menu-item';
+
+          var left = document.createElement('div');
+          var title = document.createElement('h3');
+          title.className = 'menu-item__title';
+          title.textContent = item.nome;
+          left.appendChild(title);
+
+          if (item.descricao && item.descricao.trim().length) {
+            var desc = document.createElement('p');
+            desc.className = 'menu-item__desc';
+            desc.textContent = item.descricao;
+            left.appendChild(desc);
+          }
+
+          var meta = document.createElement('div');
+          meta.className = 'menu-item__meta';
+
+          var right = document.createElement('div');
+          if (isPizza) {
+            var grid = document.createElement('div');
+            grid.className = 'price-grid';
+            var order = ['Pequena','Média','Grande','Gigante'];
+            var entries = Object.entries(item.precos).filter(function(pair){ return pair[1] && pair[1].toString().trim().length; });
+            entries.sort(function(a,b){ return order.indexOf(a[0]) - order.indexOf(b[0]); });
+            entries.forEach(function(ev) {
+              var size = ev[0];
+              var value = ev[1];
+              var row = document.createElement('div');
+              row.className = 'price-row';
+              var sizeEl = document.createElement('span');
+              sizeEl.className = 'price-row__size';
+              sizeEl.textContent = size;
+              var priceEl = document.createElement('span');
+              priceEl.className = 'price';
+              priceEl.textContent = formatPrice(value);
+              row.appendChild(sizeEl);
+              row.appendChild(priceEl);
+              grid.appendChild(row);
+            });
+            right.appendChild(grid);
+          } else {
+            var priceEl = document.createElement('div');
+            priceEl.className = 'price';
+            priceEl.textContent = formatPrice(item.preco);
+            right.appendChild(priceEl);
+          }
+
+          card.appendChild(left);
+          card.appendChild(right);
+          listEl.appendChild(card);
+        });
+      }
+
+      function formatPrice(value) {
+        if (!value) return '';
+        var v = value.toString().trim();
+        var hasComma = v.indexOf(',') !== -1;
+        var hasDot = v.indexOf('.') !== -1;
+        if (!hasComma && hasDot) {
+          v = v.replace('.', ',');
+        }
+        if (/^\d+$/.test(v)) {
+          v = v + ',00';
+        }
+        return 'R$ ' + v;
+      }
+
+      function showModal(id) {
+        var m = document.getElementById(id);
+        if (!m) return;
+        m.style.display = 'grid';
+        m.setAttribute('aria-hidden', 'false');
+        animateEnter(m.querySelector('.modal__overlay'), { delay: 0, type: 'up' });
+        animateEnter(m.querySelector('.modal__dialog'), { delay: 40, type: 'scale' });
+      }
+
+      function closeModal(m) {
+        if (!m) return;
+        m.style.display = 'none';
+        m.setAttribute('aria-hidden', 'true');
+      }
+
+      if (btnHours) {
+        btnHours.addEventListener('click', function(e) {
+          e.preventDefault();
+          showModal('hoursModal');
+        });
+      }
+
+      document.addEventListener('click', function(e) {
+        var t = e.target;
+        if (t && t.dataset && t.dataset.close === 'modal') {
+          closeModal(document.getElementById('hoursModal'));
+        }
+      });
+
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+          closeModal(document.getElementById('hoursModal'));
+        }
+      });
+
+      animateStagger(document.querySelectorAll('.cards .card'), 120, 'up');
+      fetchData();
+    })();
+  </script>
+</body>
+</html>
