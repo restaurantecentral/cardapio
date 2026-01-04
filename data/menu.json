@@ -1,10 +1,10 @@
 {
   "restaurante": "Restaurante Central",
-  "endereco": "Av. Denise Cristina da Rocha, 1505-E - Justinópolis - Ribeirão da Neves - MG",
+  "endereco": "Av. Denise Cristina da Rocha, 1716 - e - Papine (Justinópolis - MG)",
   "telefone": "(031) 3638-2244",
   "whatsapp": "(31) 3638-7499 / 3639-7212 / 2392-3436",
   "email": "centraljusti@yahoo.com.br",
-  "instagram": "@bordaoalimentos",
+  "instagram": "@restaurantepizzariacentral",
   "categorias": [
     {
       "nome": "Pizzas",
@@ -43,10 +43,9 @@
           "nome": "Modinha Central",
           "descricao": "Mussarela, presunto e calabresa",
           "precos": {
-            "Pequena": "38,00",
-            "Média": "44,00",
-            "Grande": "48,00",
-            "Gigante": "54,00"
+            "Pequena": "15,90"
+            
+            
           }
         },
         {
@@ -76,10 +75,10 @@
           "nome": "Salaminho",
           "descricao": "Mussarela e salaminho",
           "precos": {
-            "Pequena": "38,00",
-            "Média": "44,00",
-            "Grande": "48,00",
-            "Gigante": "54,00"
+            "Pequena": "48,00" ,
+            "Média": "54,00",
+            "Grande": "59,00",
+            "Gigante": "65,00"
           }
         },
         {
@@ -98,10 +97,10 @@
           "nome": "Quatro Queijos",
           "descricao": "Mussarela, queijo minas, provolone e requeijão cremoso",
           "precos": {
-            "Pequena": "44,00",
-            "Média": "48,00",
-            "Grande": "54,00",
-            "Gigante": "59,00"
+            "Pequena": "48,00",
+            "Média": "54,00",
+            "Grande": "59,00",
+            "Gigante": "65,00"
           }
         },
         {
@@ -109,10 +108,10 @@
           "nome": "À Moda Família Central",
           "descricao": "Mussarela, calabresa, presunto, bacon, cebola, pimentão, azeitona, milho verde e frango",
           "precos": {
-            "Pequena": "44,00",
-            "Média": "48,00",
-            "Grande": "54,00",
-            "Gigante": "59,00"
+            "Pequena": "50,00",
+            "Média": "56,00",
+            "Grande": "61,00",
+            "Gigante": "67,00"   
           }
         },
         {
@@ -121,9 +120,9 @@
           "descricao": "Mussarela, palmito e molho a bolonhesa",
           "precos": {
             "Pequena": "44,00",
-            "Média": "48,00",
-            "Grande": "54,00",
-            "Gigante": "59,00"
+            "Média": "52,00",
+            "Grande": "57,00",
+            "Gigante": "63,00" 
           }
         },
         {
@@ -131,10 +130,10 @@
           "nome": "Palmito com Frango",
           "descricao": "Mussarela, palmito e frango",
           "precos": {
-            "Pequena": "44,00",
-            "Média": "48,00",
-            "Grande": "54,00",
-            "Gigante": "59,00"
+            "Pequena": "48,00",
+            "Média": "54,00",
+            "Grande": "59,00",
+            "Gigante": "65,00"
           }
         },
         {
@@ -142,10 +141,10 @@
           "nome": "Frango a Bolonhesa",
           "descricao": "Mussarela e frango a bolonhesa",
           "precos": {
-            "Pequena": "44,00",
-            "Média": "48,00",
-            "Grande": "54,00",
-            "Gigante": "59,00"
+            "Pequena": "48,00",
+            "Média": "54,00",
+            "Grande": "59,00",
+            "Gigante": "65,00"
           }
         },
         {
@@ -153,10 +152,10 @@
           "nome": "Portuguesa",
           "descricao": "Mussarela, ovo, presunto, calabresa, azeitona, cebola e pimentão",
           "precos": {
-            "Pequena": "44,00",
-            "Média": "48,00",
-            "Grande": "54,00",
-            "Gigante": "59,00"
+            "Pequena": "48,00",
+            "Média": "54,00",
+            "Grande": "59,00",
+            "Gigante": "65,00"
           }
         },
         {
@@ -164,10 +163,10 @@
           "nome": "Cinco Carnes",
           "descricao": "Mussarela, presunto, calabresa, bacon, frango e lombo defumado",
           "precos": {
-            "Pequena": "44,00",
-            "Média": "48,00",
-            "Grande": "54,00",
-            "Gigante": "59,00"
+            "Pequena": "48,00",
+            "Média": "54,00",
+            "Grande": "59,00",
+            "Gigante": "65,00"
           }
         },
         {
@@ -175,10 +174,10 @@
           "nome": "Atum",
           "descricao": "Mussarela e atum",
           "precos": {
-            "Pequena": "44,00",
-            "Média": "48,00",
-            "Grande": "54,00",
-            "Gigante": "59,00"
+            "Pequena": "46,00",
+            "Média": "52,00",
+            "Grande": "57,00",
+            "Gigante": "63,00"
           }
         },
         {
@@ -186,10 +185,11 @@
           "nome": "Bacon",
           "descricao": "Mussarela, fatias de bacon e milho verde",
           "precos": {
-            "Pequena": "44,00",
-            "Média": "48,00",
-            "Grande": "54,00",
-            "Gigante": "59,00"
+            "Pequena": "46,00",
+            "Média": "52,00",
+            "Grande": "57,00",  
+            "Gigante": "63,00"
+            
           }
         },
         {
@@ -197,10 +197,10 @@
           "nome": "Vegetariana",
           "descricao": "Mussarela, azeitona, tomate e milho verde",
           "precos": {
-            "Pequena": "44,00",
-            "Média": "48,00",
-            "Grande": "54,00",
-            "Gigante": "59,00"
+            "Pequena": "46,00",
+            "Média": "52,00",
+            "Grande": "57,00",
+            "Gigante": "63,00"
           }
         },
         {
@@ -251,9 +251,9 @@
           "descricao": "Mussarela, lombo defumado e milho verde",
           "precos": {
             "Pequena": "43,00",
-            "Média": "46,00",
-            "Grande": "48,00",
-            "Gigante": "52,00"
+            "Média": "48,00",
+            "Grande": "55,00",
+            "Gigante": "58,00"
           }
         },
         {
@@ -261,16 +261,16 @@
           "nome": "Frango c/ Requeijão Cremoso",
           "descricao": "Mussarela e frango",
           "precos": {
-            "Pequena": "43,00",
-            "Média": "46,00",
-            "Grande": "48,00",
-            "Gigante": "52,00"
+            "Pequena": "46,00",
+            "Média": "52,00",
+            "Grande": "57,00",
+            "Gigante": "63,00"
           }
         },
         {
           "id": "COD.23",
           "nome": "Modinha",
-          "descricao": "",
+          "descricao": "",   
           "precos": {
             "Pequena": "55,00",
             "Média": "57,00",
