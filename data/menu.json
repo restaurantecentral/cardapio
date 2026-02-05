@@ -266,26 +266,9 @@
             "Grande": "57,00",
             "Gigante": "63,00"
           }
-        },
-        {
-          "id": "COD.23",
-          "nome": "Modinha",
-          "descricao": "",   
-          "precos": {
-            "Pequena": "55,00",
-            "Média": "57,00",
-            "Grande": "58,00",
-            "Gigante": "63,00"
-          }
-        },
-        {
-          "id": "COD.24",
-          "nome": "Provolone c/ bacon, Quatro queijos, alho poró",
-          "descricao": "",
-          "precos": {
-            "Pequena": "65,00"
-          }
         }
+        
+        
       ],
       "promocao": "AOS DOMINGOS COMPRE UMA PIZZA MD E RECEBA UMA GG"
     },
